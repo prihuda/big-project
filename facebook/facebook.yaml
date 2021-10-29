@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: facebook
+  namespace: production
+  labels:
+    app: facebook
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: facebook
+  template:
+    metadata:
+      namespace: production
+      labels:
+        app: facebook
+spec:
+  volumes:
+    - name: config-fb
+      configMap:
+        name: fb-configmap-sp3
+
+  containers:
+  - name: sosial-media
+    image: prihuda22/sosial-media-sp3:v2
+    ports:
+    - containerPort: 8081
+    volumeMounts:
+    - name: config-fb
+      mountPath: "/var/www/html/config.php"
+      subPath: "config.php"
