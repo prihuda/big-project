@@ -18,3 +18,14 @@ spec:
             name: wordpress-deploy
             port:
               number: 80
+  
+  - host: rafiqul.my.id
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: landing-page
+            port:
+              number: 80

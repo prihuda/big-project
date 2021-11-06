@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: landing-page
-  namespace: stagging
+  namespace: production
   labels:
     app: landing-page
 spec:
