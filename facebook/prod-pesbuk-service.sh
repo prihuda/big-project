@@ -1,2 +1,2 @@
 #!bin/bash
-kubectl expose deployment facebook --type=NodePort --port=80 --namespace=production
+kubectl expose deployment facebook --type=ClusterIP --port=80 --target-port=8081 --namespace=production

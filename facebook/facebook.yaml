@@ -15,7 +15,7 @@ spec:
       namespace: production
       labels:
         app: facebook
-spec:
+  spec:
   volumes:
     - name: config-fb
       configMap:
