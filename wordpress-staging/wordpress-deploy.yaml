@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name:  wordpress-deploy
-  namespace: production
+  namespace: staging
   labels:
     app:  wordpress-deploy
 spec:

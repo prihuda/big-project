@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: facebook
-  namespace: production
+  namespace: staging
   labels:
     app: facebook
 spec:
@@ -33,7 +33,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: facebook
-  namespace: production
+  namespace: staging
 spec:
   selector:
     app: facebook
