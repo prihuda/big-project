@@ -17,8 +17,8 @@ spec:
     spec:
       volumes:
         - name: config-fb
-      configMap:
-        - name: fb-configmap-sp3
+          configMap:
+            name: fb-configmap-sp3
       containers:
       - name: sosial-media
         image: prihuda22/sosial-media-sp3:v2

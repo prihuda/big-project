@@ -6,7 +6,7 @@ metadata:
 data:
   config.php: |
     <?php
-    $db_host = "database-sp3.cempee1flq9r.ap-southeast-1.rds.amazonaws.com";
+    $db_host = "bp-1.cempee1flq9r.ap-southeast-1.rds.amazonaws.com";
     $db_user = "rafiadmin";
     $db_pass = "root1234";
     $db_name = "dbsosmed_prod";
