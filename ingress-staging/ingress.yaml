@@ -19,7 +19,7 @@ spec:
             port:
               number: 80
   
-  - host: stag-rafiqul.my.id
+  - host: stag.rafiqul.my.id
     http:
       paths:
       - path: /
