@@ -19,7 +19,7 @@ spec:
             port:
               number: 80
   
-  - host: rafiqul.my.id
+  - host: landingpage.rafiqul.my.id
     http:
       paths:
       - path: /
