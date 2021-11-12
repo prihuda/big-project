@@ -9,7 +9,7 @@ data:
     $db_host = "production.cempee1flq9r.ap-southeast-1.rds.amazonaws.com";
     $db_user = "rafiadmin";
     $db_pass = "root1234";
-    $db_name = "dbsosmed";
+    $db_name = "db_sosmed";
     try {    
       //create PDO connection
       $db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
