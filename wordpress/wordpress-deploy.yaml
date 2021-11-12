@@ -58,11 +58,11 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: landing-page
+  name: wordpress-deploy
   namespace: production
 spec:
   selector:
-    app: landing-page
+    app: wordpress-deploy
   ports:
   - protocol: TCP
     port: 80
