@@ -105,7 +105,7 @@ spec:
       volumes:
         - name: pv-volume
           nfs:
-            server: fs-000dba91ea5cfcb11.efs.ap-southeast-1.amazonaws.com
+            server: fs-09db3868821a98c3f.efs.ap-southeast-1.amazonaws.com
             path: /
 ---
 kind: StorageClass
@@ -119,7 +119,7 @@ kind: ConfigMap
 metadata:
   name: efs-provisioner
 data:
-  file.system.id: fs-000dba91ea5cfcb11 
+  file.system.id: fs-09db3868821a98c3f
   aws.region: ap-southeast-1
   provisioner.name: example.com/aws-efs
   dns.name: ""
