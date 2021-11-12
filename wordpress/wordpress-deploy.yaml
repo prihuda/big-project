@@ -20,13 +20,13 @@ spec:
         image: wordpress:latest
         env:
         - name: WORDPRESS_DB_HOST
-          value: bp-project.cempee1flq9r.ap-southeast-1.rds.amazonaws.com
+          value: production.cempee1flq9r.ap-southeast-1.rds.amazonaws.com
         - name: WORDPRESS_DB_USER
           value: rafiadmin
         - name: WORDPRESS_DB_PASSWORD
           value: root1234
         - name: WORDPRESS_DB_NAME
-          value: wordpress_prod
+          value: db_wordpress
         - name: WORDPRESS_TABLE_PREFIX
           value: wp_
         - name: WORDPRESS_AUTH_KEY
