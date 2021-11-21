@@ -19,7 +19,7 @@ spec:
       - name: landing-page
         image: prihuda22/landingpage-sp3:v1
         ports:
-        - containerPort: 8082
+        - containerPort: 8080
 ---
 kind: Service
 apiVersion: v1
@@ -29,9 +29,8 @@ metadata:
 spec:
   selector:
     app: landing-page
-  type: NodePort
   ports:
   - name: http
     protocol: TCP
     port: 80
-    targetPort: 8082
+    targetPort: 8080
